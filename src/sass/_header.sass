@@ -6,6 +6,7 @@ a
   color: #c0cadd
   font-weight: 400
   font-size: 1rem
+  font-family: Roboto
   
   
   ul
@@ -19,9 +20,8 @@ a
     text-decoration: none
     color: #c0cadd
     line-height: 1.2
-    text-transform: uppercase
     padding: 0 .875rem
-
+    margin-top: 12px
     
     &:hover
       color: white
@@ -35,7 +35,10 @@ a
   text-decoration: none
   font-size: 40px
   margin-left: 14px
-  
+
+.header__logo img
+  height: 32px
+
 
 .menu
   clear: both
@@ -50,14 +53,14 @@ a
   position: relative
   user-select: none
 .navicon
-  background: #333
+  background: white
   display: block
   height: 2px
   position: relative
   transition: background .2s ease-out
   width: 18px
   &:before, &:after
-    background: #333
+    background: white
     content: ''
     display: block
     height: 100%
@@ -91,6 +94,11 @@ a
   content: ""
   display: table
   clear: both
+  
+
+.header li .menu__category
+  font-weight: bold
+  color: white
 
 @media (min-width: 1084px)
   .header
@@ -102,7 +110,6 @@ a
   
   .menu
     clear: none
-    float: right
     max-height: none
   .menu-icon
     display: none
