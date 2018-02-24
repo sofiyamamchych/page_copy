@@ -3,11 +3,10 @@
   width: 80%
 
 .breadcrumbs a
+  @include default-font(12px)
   text-decoration: none
   text-transform: uppercase
   color: rgb(170, 170, 170)
-  font-size: 12px
-  font-family: Roboto
   
 .breadcrumbs_lastlink::before
   color: #aaa
@@ -15,3 +14,29 @@
   margin: 0 .63rem
   position: relative
   top: 1px
+  
+.breadcrumbs a:hover
+  color: #9c9c9c
+ 
+.author
+  @include default-font(14px)
+  border: 1px solid #ddd
+  border-right: 0
+  height: 52px 
+  color: rgb(102, 102, 102) 
+
+
+.authorpic
+  float: left
+    
+.authorpic img
+  width: 50px
+
+.follow
+  float: right
+  
+.author:after
+  content: ""
+  display: table
+  clear: both
+  
