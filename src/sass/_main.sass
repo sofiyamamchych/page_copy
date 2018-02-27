@@ -1,4 +1,4 @@
-.main
+.mainblock,.aside
   margin: 27px auto
   width: 80%
 
@@ -71,7 +71,7 @@
 .article__imgcaption__source
   font-size: 12px
 
-.article a
+.article a, .aside a
   color: rgb(44, 126, 240)
 
 .article__ad
@@ -82,7 +82,20 @@
   font-weight: 700
 
 .article__about-author
-  font-style: italic    
+  font-style: italic  
+  
+.aside__about
+  border-top: 1px solid #ddd
+  
+
+.aside__about p
+  color: rgb(51, 51, 51)
+  @include default-font(16px)
+  font-weight: 400
+  line-height: 24px
+  margin-bottom: 20px
+
+
 
 @media (min-width: 1024px)
   
