@@ -3,10 +3,11 @@
   padding: 0 15px
   color: rgb(192, 202, 221)
   @include default-font(12px)
+  height: 92px
     
 .footer__nav 
   display: flex
-  justify-content: space-between
+  margin-bottom: 4px
 
 .footer__nav a
   font-weight: 400
@@ -23,3 +24,26 @@
 
 .footer__navitem
   margin-top: 20px
+  margin-right: 20px
+  
+.footer__forfullscr
+  display: none
+
+.footer__logo
+  margin-top: 15px
+  margin-right: 22px
+  display: none
+  
+.footer__logo img
+  width: 226px  
+
+@media (min-width: 640px)
+  .footer__forfullscr
+    display: block
+    
+@media (min-width: 1024px)
+  .footer
+    display: flex
+    
+  .footer__logo
+    display: block
